@@ -1,4 +1,5 @@
 import logo from "./images/logo.svg";
+import flag from "./images/india-flag.svg";
 
 function App() {
   return (
@@ -39,6 +40,18 @@ function App() {
               <div className="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block transition-all duration-200"></div>
             </li>
           </ul>
+
+          <div className="flex  gap-3">
+            <img src={flag} width="28px" height="20px"></img>
+
+            <button className="py-3 px-5 font-mullish text-white  border-lightBlue border text-sm rounded-sm font-bold">
+              Login
+            </button>
+
+            <button className="py-3 px-4 font-mullish rounded-sm text-sm font-bold text-lightBlue300 border transition-all duration-200 bg-white hover:text-lightBlue500">
+              Sign Up
+            </button>
+          </div>
         </div>
       </nav>
     </div>
