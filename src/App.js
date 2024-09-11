@@ -4,6 +4,7 @@ import flag from "./images/india-flag.svg";
 function App() {
   return (
     <div>
+      {/* navbar */}
       <nav className="bg-deepBlue">
         <div className="relative w-[1080px] mx-auto flex items-center justify-evenly">
           {/* logo */}
@@ -54,6 +55,17 @@ function App() {
           </div>
         </div>
       </nav>
+
+      {/* hero section */}
+
+      <section className="relative bg-deepBlue">
+        <div>
+          {/* left part */}
+          <div></div>
+          {/* right part */}
+          <div></div>
+        </div>
+      </section>
     </div>
   );
 }
