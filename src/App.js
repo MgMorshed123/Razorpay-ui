@@ -2,10 +2,11 @@ import logo from "./images/logo.svg";
 import flag from "./images/india-flag.svg";
 import heroImage from "./images/hero-illustration.jpg";
 import heroShape from "./images/hero-shape.svg";
-
+import dooted from "./images/feature-section1-dottedrows.png";
+import payment from "./images/payment-suite.png";
 function App() {
   return (
-    <div>
+    <div className="">
       {/* navbar */}
       <nav className="bg-deepBlue">
         <div className="relative w-[1080px] mx-auto flex items-center justify-evenly">
@@ -60,7 +61,7 @@ function App() {
 
       {/* hero section */}
 
-      <section className="relative bg-deepBlue">
+      <section className="relative bg-deepBlue   ">
         <div className="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
           {/* left */}
 
@@ -88,8 +89,75 @@ function App() {
         {/* hero shape */}
 
         {/* left-0 right-0  it will take whoel width */}
-        <div className="absolute left-0 right-0 w-[101%]">
-          <img src={heroShape} className="w-full object-fill scale-x-100"></img>
+        <div className="absolute left-0  right-0 w-[101%] ">
+          <img
+            src={heroShape}
+            className="w-full  object-fill scale-x-100"
+          ></img>
+        </div>
+      </section>
+
+      {/* feature section  */}
+
+      <section className="relative  mt-[190px] overflow-hidden">
+        <img src={dooted} width="233" height="167" loading="lazy"></img>
+
+        <img src={dooted} width="233" height="167" loading="lazy"></img>
+
+        <div>
+          {/* heading */}
+          <h2> Accept Payments with Razorpay Payments Suite </h2>
+          <div></div>
+
+          {/* content box */}
+
+          <div>
+            {/* left section */}
+
+            <div>
+              <h3>
+                SuperCharge your buisness with the all-powerful
+                <span className="text-lightBlue">Payment GateWay </span>
+              </h3>
+              <ul>
+                <li>
+                  <span className="">100+ Payments Methods </span>
+                </li>
+                <li>
+                  <span className="">Industry Leading Success Rate </span>
+                </li>
+
+                <li>
+                  <span className="">Superior Checkout Experience </span>
+                </li>
+                <li>
+                  {" "}
+                  <span className="">Easy to integrate </span>
+                </li>
+
+                <li>
+                  <span className="">Instant Settlement from day 1 </span>
+                </li>
+
+                <li>
+                  <span className="">Indepth Reporting and insight </span>
+                </li>
+              </ul>
+
+              {/* for button and hyperlink
+               */}
+
+              <div>
+                <button>Sign Up now</button>
+                {/* hyperlink */}
+                <div>
+                  <a href="">Know More</a>
+                  <i></i>
+                </div>
+              </div>
+            </div>
+            <img src={payment} alt=""></img>
+          </div>
         </div>
       </section>
     </div>
