@@ -1,5 +1,7 @@
 import logo from "./images/logo.svg";
 import flag from "./images/india-flag.svg";
+import heroImage from "./images/hero-illustration.jpg";
+import heroShape from "./images/hero-shape.svg";
 
 function App() {
   return (
@@ -59,11 +61,35 @@ function App() {
       {/* hero section */}
 
       <section className="relative bg-deepBlue">
-        <div>
-          {/* left part */}
-          <div></div>
-          {/* right part */}
-          <div></div>
+        <div className="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto">
+          {/* left */}
+
+          {/* the default property of flex strxh the width to that width of div */}
+          <div className="space-y-6">
+            <h1 className="font-mullish font-bold text-[40px] leading-[1.2] text-white">
+              Power your buisness
+            </h1>
+
+            <p className="font-mullish text-[18px]  leading-7 text-white opacity-70">
+              {" "}
+              Accept payments from customers, Automate Payments to vendor $
+              employees
+            </p>
+            <button className="bg-lightBlue text-white rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 py-[10px] px-[10px]">
+              Sign Up Now
+            </button>
+          </div>
+
+          {/* right part*/}
+
+          <img src={heroImage} className="w-full max-w-[680px]"></img>
+        </div>
+
+        {/* hero shape */}
+
+        {/* left-0 right-0  it will take whoel width */}
+        <div className="absolute left-0 right-0 w-[101%]">
+          <img src={heroShape} className="w-full object-fill scale-x-100"></img>
         </div>
       </section>
     </div>
