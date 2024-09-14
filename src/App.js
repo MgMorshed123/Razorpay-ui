@@ -99,28 +99,44 @@ function App() {
 
       {/* feature section  */}
 
-      <section className="relative  mt-[190px] overflow-hidden">
-        <img src={dooted} width="233" height="167" loading="lazy"></img>
+      <section className="relative  mt-[180px] overflow-hidden">
+        <img
+          src={dooted}
+          width="233"
+          height="167"
+          loading="lazy"
+          className="absolute top-[-6rem]  left-[1rem] inline-block -z-10"
+        ></img>
 
-        <img src={dooted} width="233" height="167" loading="lazy"></img>
+        <img
+          src={dooted}
+          width="233"
+          height="167"
+          loading="lazy"
+          className="absolute top-[-1rem] right-0 inline-block rotate-180 "
+        ></img>
 
-        <div>
+        <div className="relative w-11/12 max-w-[1080px]  mx-auto pt-4">
           {/* heading */}
-          <h2> Accept Payments with Razorpay Payments Suite </h2>
-          <div></div>
+          <h2 className="font-mullish text-2xl  text-center font-bold ">
+            {" "}
+            Accept Payments with Razorpay Payments Suite{" "}
+          </h2>
+          <div className="w-6 h-1 bg-lime-500 mx-auto  mt-4 mb-6"></div>
 
           {/* content box */}
 
-          <div>
+          <div className="w-full bg-white flex rounded-md relative p-10 py-12 min-h-[520px]">
             {/* left section */}
 
-            <div>
-              <h3>
+            <div className="flex flex-col justify-between items-center w-full">
+              <h3 className="font-mullish text-28px leading-10 font-bold max-w-[500px]">
                 SuperCharge your buisness with the all-powerful
                 <span className="text-lightBlue">Payment GateWay </span>
               </h3>
-              <ul>
-                <li>
+              <ul className="space-y-2 ">
+                <li className="font-mullish flex items-center  space-x-2">
+                  <i data-feather="check" className="text-greenLight"></i>
                   <span className="">100+ Payments Methods </span>
                 </li>
                 <li>
